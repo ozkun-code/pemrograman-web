@@ -12,7 +12,7 @@ if(isset($_POST['submit'])) {
 
     $randomFilename = time().'-'.md5(rand()).'-'.$image;
 
-    $uploadPath = $_SERVER['DOCUMENT_ROOT'].'/upload/'.$randomFilename;
+    $uploadPath = $_SERVER['DOCUMENT_ROOT'].'/pemweb/upload/'.$randomFilename;
 
     $upload = move_uploaded_file($tempImage,$uploadPath);
 
